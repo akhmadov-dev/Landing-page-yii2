@@ -42,14 +42,21 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        */
+        'assetManager' => [
+            'bundles' => [
+                \yii\bootstrap5\BootstrapAsset::class => [
+                    'css' => [
+                        '/css/styles.css'
+                    ]
+                ]
+            ]
+        ]
     ],
     'params' => $params,
 ];
